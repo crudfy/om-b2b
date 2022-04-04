@@ -5,18 +5,33 @@
 [![Build Status][ico-travis]][link-travis]
 [![StyleCI][ico-styleci]][link-styleci]
 
-This is where your description should go. Take a look at [contributing.md](contributing.md) to see a to do list.
+Ce package permet d'utiliser l'API B2B de Orange Money très facilement
 
 ## Installation
 
-Via Composer
+A travers Composer 
+####  Ajouter le code suivant dans votre fichier composer.json
 
+```
+"repositories": [
+    {
+        "type": "vcs",
+        "url":  "git@github.com:crudfy/om-b2b.git"
+    }
+]
+```
+En suite intaller la package avec la commande suivante:
 ``` bash
 $ composer require crudfy/om-b2b
 ```
 
 ## Usage
-
+### Etape 1: 
+Entrer la commande suivante pour ajouter le fichier de configuration  omb-b2b.php dans 
+le dossier config de votre projet
+```
+php artisan om-b2b:install
+```
 ## Change log
 
 Please see the [changelog](changelog.md) for more information on what has changed recently.

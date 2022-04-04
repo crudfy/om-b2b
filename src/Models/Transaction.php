@@ -7,27 +7,8 @@ use Crudfy\OmB2b\Traits\HasTransaction;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Transaction extends Model implements IHasTransaction
+class Transaction extends Model
 {
-    use HasFactory, HasTransaction;
+    use HasFactory;
 
-    public function getTransactionIdAttribute()
-    {
-        // TODO: Implement getTransactionIdAttribute() method.
-    }
-
-    public function getOmNumberAttribute()
-    {
-        // TODO: Implement getOmNumberAttribute() method.
-    }
-
-    public function getAmountAttribute()
-    {
-        // TODO: Implement getAmountAttribute() method.
-    }
-
-    public function getAddToTransactionAttribute()
-    {
-        // TODO: Implement getAddToTransactionAttribute() method.
-    }
 }
